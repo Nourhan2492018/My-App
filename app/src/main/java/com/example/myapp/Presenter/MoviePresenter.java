@@ -29,7 +29,7 @@ private PresenterInterface presenterInterface;
     public void DataFromRetrofit()
     {
         retrofit=new Retrofit.Builder()
-                .baseUrl("https://api.themoviedb.org/")
+                .baseUrl("https://api.themoviedb.org")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         apiInterface = retrofit.create(ApiInterface.class);

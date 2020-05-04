@@ -38,7 +38,6 @@ private MoviePresenter nMoviePresenter;
     @Override
     public void SetItemMovieInRecycleView(List<MovieModel.Results> MoviesList)
     {
-
         nMovieAdapter=new MovieAdapter(MainActivity.this,MoviesList);
         nRecyclerView.setAdapter(nMovieAdapter);
 
